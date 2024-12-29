@@ -1,0 +1,99 @@
+.container {
+  max-width: 1355px;
+  height: auto;
+  position: relative;
+  margin-left: 120px;
+  margin-right: 70px;
+}
+
+.header {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  top: 12px;
+  position: relative;
+}
+
+.imaged {
+  display: flex;
+  justify-content: center;
+}
+
+.imageSection {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.imageCard {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 3px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.imageCard:hover {
+  transform: translateY(-10px);
+}
+
+.image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.heading {
+  margin-top: 10px;
+  font-size: 16px;
+  margin-left: 0;
+  cursor: pointer;
+}
+
+.rating {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #686b78;
+  cursor: pointer;
+}
+
+.sub {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #686b78;
+  cursor: pointer;
+}
+
+.place {
+  margin-top: 5px;
+  font-size: 20px;
+  color: #686b78;
+  cursor: pointer;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* color: #686b78; */
+  gap: 8px;
+  height: 40px;
+  width: 85px;
+  border-radius: 15px 15px 15px 15px;
+  background: transparent;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+.fixed {
+  display: flex;
+  gap: 15px;
+}

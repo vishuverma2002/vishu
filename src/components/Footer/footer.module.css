@@ -1,0 +1,199 @@
+.footer {
+  background-color: #f8f8f8;
+  padding: 40px 20px;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.footer h1 {
+  margin-left: 70px;
+  margin-bottom: 25px;
+}
+
+.footerSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  margin-left: 150px;
+}
+
+.footerLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footerLinkeds,
+.footerLinkeded,
+.links,
+.available,
+.lifes,
+.social {
+  flex: 1 1 20%;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.footerLinkeds:last-child,
+.footerLinkeded:last-child,
+.links:last-child,
+.available:last-child,
+.lifes:last-child,
+.social:last-child {
+  margin-right: 0;
+}
+
+.footerLinkeds h4 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.footerLinkeded h4 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.links h4 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.available {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.social h4 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.lifes h4 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.footerLinkeds a {
+  text-decoration: none;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.footerLinkeds a:hover {
+  color: orange;
+}
+
+.footerLinkeded a {
+  text-decoration: none;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.footerLinkeded a:hover {
+  color: orange;
+}
+
+.links a {
+  text-decoration: none;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.links a:hover {
+  color: orange;
+}
+
+.available a {
+  text-decoration: none;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.available a:hover {
+  color: orange;
+}
+
+.social a {
+  text-decoration: none;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.social a:hover {
+  color: orange;
+}
+
+.lifes a {
+  text-decoration: none;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.lifes a:hover {
+  color: orange;
+}
+
+.socialMedia {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.socialMedia p {
+  font-size: 20px;
+  color: #555;
+  cursor: pointer;
+}
+
+.socialMedia p:hover {
+  color: #000;
+}
+
+.footerBelow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.footerCopyright p {
+  font-size: 14px;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .footerLinks {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footerLinkeds,
+  .footerLinkeded,
+  .links,
+  .available,
+  .lifes,
+  .social {
+    flex: 1 1 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .socialMedia {
+    justify-content: flex-start;
+  }
+}

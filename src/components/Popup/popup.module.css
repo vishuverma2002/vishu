@@ -1,0 +1,140 @@
+.emodaloverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalcontent {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  background-color: #fff;
+}
+
+.header h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.btnClose {
+  cursor: pointer;
+  font-size: 2.2rem;
+  color: #333;
+  padding: 5px;
+}
+
+.modalBody {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 20px;
+}
+
+.leftSidebar {
+  width: 30%;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow-y: auto;
+}
+
+.categoryItem {
+  padding: 5px 0;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #333;
+  font-weight: normal;
+  transition: color 0.2s ease;
+}
+
+.categoryItem:hover,
+.categoryItem.active {
+  color: #ff4500;
+  font-weight: bold;
+}
+
+.rightContent {
+  width: 70%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.rightTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 7rem;
+}
+
+.optionItem {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 7rem;
+}
+
+.radioInput {
+  margin-right: 10px;
+}
+
+.optionLabel {
+  font-size: 0.9rem;
+}
+
+.applyButton {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff4500;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.applyButton:hover {
+  background-color: #e63e00;
+}
+
+@media (max-width: 768px) {
+  .modalcontent {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .leftSidebar {
+    width: 100%;
+    border-right: none;
+  }
+
+  .rightContent {
+    width: 100%;
+  }
+}

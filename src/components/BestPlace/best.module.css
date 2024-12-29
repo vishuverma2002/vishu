@@ -1,0 +1,49 @@
+.container {
+  max-width: 1355px;
+  height: auto;
+  position: relative;
+  margin-left: 100px;
+  margin-right: 70px;
+}
+
+.header {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  top: 12px;
+  position: relative;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 90%;
+  position: relative;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px 10px 10px 10px;
+  border: 1px solid black;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.store {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
